@@ -17,20 +17,7 @@ body{
 .content{
     max-width: 901px;
     margin: 0 auto;
-    
-    
-}
-.header__wrapper{
-    
-
-}
-.header{
-
-}
-
-.navigation{
-
-}
+   }
 .menu{
     margin: 0;
     padding: 0;
@@ -61,17 +48,8 @@ body{
     display: inline-block;
     width: 421px;
     
-}
-#site{
 
-
-    
-} 
-
-.picture{
-
-    
-
+ 
 }
 .names{
 text-align: left;
