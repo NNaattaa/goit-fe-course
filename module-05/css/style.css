@@ -12,6 +12,279 @@ body {
 	color: #555252;
 	float: left;
 }
+.logo:first-letter {
+	font-weight: 600;
+	color: #1abc9c;
+}
+.menu {
+	margin: 8px	auto;
+	float: right;
+}
+.menu_item {
+	display: inline-block;
+	font-family: Open Sans, Arial;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-left: 36px;
+}
+.menu_item > a {
+	text-decoration: none;
+	color: #0f0101;
+}
+.menu_item > a:hover {
+	color: #1abc9c;
+}
+.clearfix:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.slider {
+	margin: auto;
+	width: 100%;
+	position: relative;
+}
+/*.slider:hover  .overlay {
+	opacity: 0;
+	transition: .3s;
+}*/
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+}
+.img_slider {
+	display: inline-block;
+	width: 100%;
+}
+.slider_content {
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	width: 1100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 
+}
+.arrow {
+	display: block;
+	content: "";
+	width: 80px;
+	height: 80px;
+	background-color: #1abc9c;
+	position: absolute;
+	opacity: .65;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.la {
+	left: 0px;
+}
+.ra {
+	right: 0px;
+}
+.arrow:hover {
+	opacity: 1;
+}
+.slider_content  img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.slider_text {
+	display: inline-block;
+}
+h1 {
+	display: block;
+	text-align: left;
+	color: #fff;
+	font-family: Roboto;
+	font-weight: 600;
+	font-size: 60px;
+	margin: 20px 0;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+}
+h2 {
+	display: block;
+	text-align: center;
+	color: #515151;
+	margin-top: 100px;
+	font-family: Roboto;
+	font-weight: 600;
+	font-size: 48px;
+	text-transform: uppercase;
+}
+h2:after {
+	display: block;
+	margin: auto;
+	content: "";
+	width: 160px;
+	height: 8px;
+	margin-top: 32px;
+	margin-bottom: 80px;
+	background-color: #1abc9c;
+}
+h4 {
+	display: block;
+	text-align: left;
+	color: #fff;
+	margin: 20px 0;
+	font-family: Roboto, Arial;
+	font-weight: 300;
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.products {
+	display: flex;
+	margin: auto;
+	width: 1100px;
+	position: relative;
+}
+.product1 {
+	margin-right: 22.68px;
+	display: inline-block;
+	width: 255px;
+	object-fit: fill;
+	position: relative;
+}
+.product1:nth-child(4n) {
+	margin-right: 0;
+}
+.product1:hover .product_overlay {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	bottom: 50px;
+	left: 8px;
+	background-color: #000;
+	opacity: .55;
+	transition: .3s;
+}
+.icons_block {
+	display: inline-block;
+	width: 160px;
+	height: 105px;
+	position: absolute;
+	left: 50%;
+	top: 45%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+.product_info {
+	display: inline-block;
+	width: 100%;
+	height: 42px;
+	color: white;
+	position: absolute;
+	background: linear-gradient(to left, #8c8c8c 22%, #323232 22%);
+	bottom: 0;
+}
+.product1:hover .product_info {
+	background: linear-gradient(to left, #1abc9c 22%, #7fd9c7 22%);
+	transition: .3s;
+}
+.product_descr, .product_price {
+	margin-top: 13px;
+	font-family: roboto, arial;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.product_descr {
+	float: left;
+	margin-left: 12px;
+}	
+.product_price {
+	float: right;
+	margin-right: 12px;
+}
+.heart, .traversal, .time, .cart {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	background-color: none;
+	border: 1px solid white;
+	box-sizing: border-box;
+}
+.heart:hover, .traversal:hover, .time:hover, .cart:hover {
+	background-color: #1abc9c;
+	border: none;
+	transition: .3s;
+}
+.cart {
+	background-color: #323232;
+}
+.traversal {
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.time {
+	top: 0;
+	right: 0;
+}
+.cart {
+	bottom: 0;
+	width: 100%;
+}
+.icons_block  img {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.cart_text {
+	text-transform: uppercase;
+	font-family: open sans, arial;
+	font-size: 12px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: white;
+
+}
+.cart  img {
+	display: inline-block;
+	position: absolute;
+	left: 30px;
+}
+.icons_block {
+	opacity: 0;
+}
+.product1:hover .icons_block {
+	opacity: 1;
+	transition: .3s;
+}
+footer {
+	display: block;
+	width: 100%;
+	height: 90px;
+	background-color: #323232;
+	position: relative;
+	margin-top: 100px;
+}
+.footer_text {
+	color: white;
+	font-family: open sans, arial;
+	position: absolute;
+	font-size: 16px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+footer a {
+	text-decoration: none;
+	color: #1abc9c;
+}
 
 	
