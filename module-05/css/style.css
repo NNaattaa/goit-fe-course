@@ -36,8 +36,9 @@ body {
 	color: #1abc9c;
 }
 .clearfix:after {
-	clear: both;
 	content: "";
+	clear: both;
+	
 	display: table;
 }
 .slider {
@@ -83,6 +84,7 @@ body {
 }
 .la {
 	left: 0px;
+	
 }
 .ra {
 	right: 0px;
