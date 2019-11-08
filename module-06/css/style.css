@@ -65,14 +65,12 @@ h3, h2, h4, .copyright {
 }
 h3 {
 	margin-bottom: 20px;
-	display: block;
 	text-align: center;
 	font-family: 'Kaushan Script', sans-serif;
 	font-size: 24px;
 	margin-top: 100px;
 }
 h2 {
-	display: block;
 	text-align: center;
 	text-transform: uppercase;
 	position: relative;
@@ -206,12 +204,23 @@ footer {
 
 }
 input {
+	width: 230px;
+	height: 40px;
+	padding: 0;
+	padding-left: 10px;
 	color: #e7e7e7;
 	border: 1px solid #e7e7e7;
 	box-sizing: border-box;
 	border-right: none;
 }
 button {
+	width: 150px;
+	height: 40px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	padding: 0;
+	font-size: 15px;
+	font-weight: 700;
 	color: white;
 	background-color: #95e1d3;
 	box-sizing: border-box;
