@@ -1,4 +1,19 @@
-body {
+
+html {
+	box-sizing: border-box;
+}
+  
+  *,
+  *::before,
+  *::after {
+	box-sizing: inherit;
+}
+  
+:root {
+	--main-color: #95e1d3;
+	--primary-color: #f38181;
+}
+.body {
 	width: 1200px;
 	margin: auto;
 	margin-bottom: 15px;
