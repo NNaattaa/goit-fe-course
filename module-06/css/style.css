@@ -13,7 +13,7 @@ html {
 	--main-color: #95e1d3;
 	--primary-color: #f38181;
 }
-.body {
+body {
 	width: 1200px;
 	margin: auto;
 	margin-bottom: 15px;
