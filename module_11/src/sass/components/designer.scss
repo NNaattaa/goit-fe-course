@@ -1,0 +1,17 @@
+.designer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $main-font-stack;
+    font-size: 14px;
+    margin: 10px auto;
+
+    &__text {
+      color: $title-color;
+    }
+
+    &__name {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }

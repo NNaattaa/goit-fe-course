@@ -1,0 +1,19 @@
+.wrapper {
+    background-image: url(../images/Layer15.png);
+    object-fit: cover;
+    min-height: 1000px;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .wrapper {
+      background-image: url(../images/Layer15@2x.png);
+      object-fit: cover;
+      min-height: 1000px;
+      min-width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }

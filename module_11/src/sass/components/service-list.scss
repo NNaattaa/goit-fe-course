@@ -1,0 +1,50 @@
+.service-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 75px;
+    padding: 0;
+  
+    &__item {
+      flex: 0 0 392px;
+      margin-bottom: 100px;
+    }
+      
+    &__item {
+      background-repeat: no-repeat;
+    }
+      
+    &__icon-clock {
+      background-image: url(../images/clock.png);
+    }
+      
+    &__icon-line_graph {
+      background-image: url(../images/LINE_GRAPH.png);
+    }
+      
+    &__icon-computer {
+      background-image: url(../images/computer.png);
+    }
+      
+    &__icon-book {
+      background-image: url(../images/BOOK.png);
+    }
+      
+    &__icon-home {
+      background-image: url(../images/HOME.png);
+    }
+      
+    &__icon-image {
+      background-image: url(../images/IMAGE.png);
+    }
+  
+    &__text {
+      width: 330px;
+      margin-top: 20px;
+      padding: 0 0 0 64px;
+      font-family: $other-font-stack;
+      font-size: 14px;
+      color: $text-color;
+    }
+  }
