@@ -629,6 +629,18 @@ h3 {
   .user-menu__icon:hover {
     background-color: #f38181; }
 
+    .icon-facebook {
+      left: 68px; }
+    
+    .icon-twitter {
+      left: 124px; }
+    
+    .icon-pinterest {
+      left: 180px; }
+    
+    .icon-instagram {
+      left: 237px; }
+
 .footer {
   height: 63px; }
 
