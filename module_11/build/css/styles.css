@@ -629,6 +629,21 @@ h3 {
   .user-menu__icon:hover {
     background-color: #f38181; }
 
+    .overlay__card-list .overlay-icon {
+      display: inline-block;
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fce38a;
+      fill: #f38181;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    
+
     .icon-facebook {
       left: 68px; }
     
