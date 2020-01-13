@@ -629,6 +629,20 @@ h3 {
   .user-menu__icon:hover {
     background-color: #f38181; }
 
+    .overlay__card-list a {
+      position: absolute;
+      width: 55px;
+      height: 58px;
+      background-color: #fce38a;
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 207px;
+      z-index: -1; }
+      .overlay__card-list a:hover {
+        background-color: #f38181;
+        transition-duration: 200ms;
+        transition-timing-function: linear; }
+
     .overlay__card-list .overlay-icon {
       display: inline-block;
       position: absolute;
