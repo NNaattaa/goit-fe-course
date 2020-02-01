@@ -1,13 +1,14 @@
+'use strict';
+
 let input;
 let total = 0;
 
-do {
-  input = prompt('Enter any number');
-  if (Number.isNaN(Number(input))) {
-    alert('No number was entered, try again');
-  } else {
-    total = total + Number(input);
-  }
-} while (input);
+const startMessage = `Enter your number`;
 
-alert(`The total amount of numbers is ${total}`);
+do {
+  input = prompt(startMessage);
+  total += Number(input);
+} while (input !== null);
+
+// console.log(total);
+alert(`Total sum is: ${total}`);

@@ -1,41 +1,45 @@
-const Chn = 'Китай';
-const deliveryChn = 100;
+'use strict';
 
-const Chl = 'Чили';
-const deliveryChl = 250;
+const startMessage = `В какую страну Вы хотите оформить доставку?`;
+const CHINA = `китай`;
+const deliveryCostChina = `100 кредитов`;
+const CHILE = `чили`;
+const deliveryCostChile = `250 кредитов`;
+const AUSTRALIA = `австралия`;
+const deliveryCostAustralia = `170 кредитов`;
+const INDIA = `индия`;
+const deliveryCostIndia = `80 кредитов`;
+const JAMAICA = `ямайка`;
+const deliveryCostJamaica = `120 кредитов`;
 
-const Aus = 'Австралия';
-const deliveryAus = 170;
+const request = prompt(`${startMessage}`);
 
-const Ind = 'Индия';
-const deliveryind = 80;
+let message;
 
-const Yam = 'Ямайка';
-const deliveryYam = 120;
-
-const userInputCountry = prompt('В какую страну вы хотите оформить доставку?');
-
-switch (userInputCountry && userInputCountry.toLowerCase()) {
-  case Chn.toLowerCase():
-    console.log(`Доставка в ${Chn} будет стоить ${deliveryChn} кредитов`);
-    break;
-  case Chl.toLowerCase():
-    console.log(`Доставка в ${Chl} будет стоить ${deliveryChl} кредитов`);
-    break;
-  case Aus.toLowerCase():
-    console.log(`Доставка в ${Aus} будет стоить ${deliveryAus} кредитов`);
-    break;
-  case Ind.toLowerCase():
-    console.log(`Доставка в ${Ind} будет стоить ${deliveryind} кредитов`);
-    break;
-  case Yam.toLowerCase():
-    console.log(`Доставка в ${Yam} будет стоить ${deliveryYam} кредитов`);
+switch (request.toLowerCase()) {
+  case CHINA:
+    message = `Доставка в ${CHINA} будет стоить ${deliveryCostChina}`;
     break;
 
-  case null:
-    console.log('Отменено пользователем');
+  case CHILE:
+    message = `Доставка в ${CHILE} будет стоить ${deliveryCostChile}`;
+    break;
+
+  case AUSTRALIA:
+    message = `Доставка в ${AUSTRALIA} будет стоить ${deliveryCostAustralia}`;
+    break;
+
+  case INDIA:
+    message = `Доставка в ${INDIA} будет стоить ${deliveryCostIndia}`;
+    break;
+
+  case JAMAICA:
+    message = `Доставка в ${JAMAICA} будет стоить ${deliveryCostJamaica}`;
     break;
 
   default:
-    alert('В вашей стране доставка недоступна!');
+    message = `В Вашей стране доставка недоступна!`;
 }
+
+// console.log(message);
+alert(message);

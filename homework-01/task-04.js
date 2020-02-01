@@ -1,22 +1,21 @@
+'use strict';
 const credits = 23580;
 const pricePerDroid = 3000;
+const incomeRequest = prompt(`Сколько дроидов Вы хотите купить?`);
+let totalPrice;
+let change;
 let message;
 
-let userInput = prompt('Какое кл-во дроидов вы хотите купить?');
-
-let quantityDroid = userInput;
-let totalPrice = userInput * pricePerDroid;
-
-if (userInput === null) {
-  message = 'Отменено пользователем!';
-} else {
-  totalPrice;
-  if (totalPrice > credits) {
-    message = 'Недостаточно средств на счету!';
-  } else if (totalPrice < credits) {
-    message = `Вы купили ${quantityDroid} дроидов, на счету осталось ${credits -
-      totalPrice} кредитов.`;
+if (incomeRequest === null) {
+  message = `Отменено пользователем`;
+} else if (incomeRequest) {
+  totalPrice = Number(incomeRequest) * pricePerDroid;
+  change = credits - totalPrice;
+  if (totalPrice <= credits) {
+    message = `Вы купили ${incomeRequest} дроидов, на счету осталось ${change} кредитов`;
+  } else {
+    message = `Недостаточно средств на счету`;
   }
 }
 
-console.log(message);
+alert(message);

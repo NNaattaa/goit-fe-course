@@ -1,8 +1,8 @@
-const name = 'Shield Generator';
-let price = '1000';
+'use strict';
 
-console.log(`Selected ${name}, price per unit ${price} credits`);
+const name = 'Генератор защитного поля';
+let price = 1000;
+console.log(`Выбран "${name}", цена за штуку ${price} кредитов.`);
 
-price = '2000';
-
-console.log(`Selected ${name}, price per unit ${price} credits`);
+let newPrice = 2000;
+console.log(`Выбран "${name}", цена за штуку ${newPrice} кредитов.`);
