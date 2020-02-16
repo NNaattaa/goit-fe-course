@@ -1,16 +1,19 @@
-function findBestEmployee(employees) {
-  const users = Object.keys(employees);
+`use strict`;
+const findBestEmployee = function(employees) {
+  let max = 0;
+  let name;
 
-  let tasksBest = [];
+  const keys = Object.keys(employees);
 
-  for (const user of users) {
-    if (employees[user] > tasksBest) {
-      tasksBest = employees[user];
-      name = user;
+  for (let key of keys) {
+    if (max < employees[key]) {
+      max = employees[key];
+      name = key;
     }
   }
-  return name;
-}
+
+  return `${name}: ${max}`;
+};
 
 console.log(
   findBestEmployee({
@@ -20,6 +23,7 @@ console.log(
     lorence: 99,
   }),
 ); // lorence
+
 console.log(
   findBestEmployee({
     poly: 12,
