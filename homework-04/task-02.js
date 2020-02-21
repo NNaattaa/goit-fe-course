@@ -1,5 +1,4 @@
 'use strict';
-
 const inventory = {
   items: ['Монорельса', 'Фильтр'],
   add(itemName) {
@@ -11,16 +10,17 @@ const inventory = {
 };
 
 const invokeInventoryAction = function(itemName, action) {
-  console.log(`Invoking ${action.name} opeartion on ${itemName}`);
-  action.call(inventory, itemName);
+  console.log(`Invoking ${action.name} operation on ${itemName}`);
+  action(itemName);
+  // (action === inventory.add) ? inventory.add(itemName) : inventory.remove(itemName);
 };
 
-invokeInventoryAction('Аптечка', inventory.add);
-// Invoking add opeartion on Аптечка
+invokeInventoryAction('Аптечка', inventory.add.bind(inventory));
+// Invoking add operation on Аптечка
 
 console.log(inventory.items); // ['Монорельса', 'Фильтр', 'Аптечка']
 
-invokeInventoryAction('Фильтр', inventory.remove);
-// Invoking remove opeartion on Фильтр
+invokeInventoryAction('Фильтр', inventory.remove.bind(inventory));
+// Invoking remove operation on Фильтр
 
 console.log(inventory.items); // ['Монорельса', 'Аптечка']
